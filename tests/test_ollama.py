@@ -1,7 +1,16 @@
 from langchain_ollama import ChatOllama
 
-llm = ChatOllama(model="qwen3:8b", temperature=0)
 
-response = llm.invoke("Explain what an API is in one simple sentence.")
+def test_ollama_connection():
+    llm = ChatOllama(
+        model="qwen3:8b",
+        temperature=0,
+    )
 
-print(response.content)
+    response = llm.invoke(
+        "Reply with exactly: OK"
+    )
+
+    assert response is not None
+    assert response.content
+    assert isinstance(response.content, str)

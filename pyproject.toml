@@ -19,6 +19,7 @@ where = ["src"]
 
 [dependency-groups]
 dev = [
+    "pytest",
     "ruff",
 ]
 
