@@ -7,6 +7,12 @@ name = "langchain-learning"
 version = "0.1.0"
 description = "Learning and experimentation with LangChain, LangGraph, Ollama and AI agents"
 requires-python = ">=3.12,<3.13"
+dependencies = [
+    "langchain==1.3.15",
+    "langgraph==1.2.11",
+    "langchain-community==0.4.2",
+    "langchain-ollama==1.1.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
