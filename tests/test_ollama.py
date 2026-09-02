@@ -1,10 +1,8 @@
-from langchain_ollama import ChatOllama
-
-from langchain_learning.config import OLLAMA_MODEL
+from langchain_learning.llm import get_llm
 
 
 def test_ollama_connection():
-    llm = ChatOllama(model=OLLAMA_MODEL, temperature=0)
+    llm = get_llm()
 
     response = llm.invoke("Reply with exactly: OK")
 
