@@ -1,2 +1,3 @@
 OLLAMA_BASE_URL = "http://localhost:11434"
 OLLAMA_MODEL = "qwen3:4b"
+OLLAMA_TEMPERATURE = 0
