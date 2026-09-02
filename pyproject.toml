@@ -21,6 +21,8 @@ where = ["src"]
 dev = [
     "pytest",
     "ruff",
+    "jupyter",
+    "ipykernel",
 ]
 
 [tool.ruff]
