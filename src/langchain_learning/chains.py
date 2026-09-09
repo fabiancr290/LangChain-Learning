@@ -7,3 +7,8 @@ from langchain_learning.prompts import BASIC_PROMPT
 
 def get_basic_chain() -> Runnable:
     return BASIC_PROMPT | get_llm() | StrOutputParser()
+
+
+def stream_basic_chain(question: str):
+    chain = get_basic_chain()
+    return chain.stream({"question": question})
